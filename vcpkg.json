@@ -1,0 +1,7 @@
+{
+    "name": "test-vcpkg",
+    "version": "1.0.0",
+    "dependencies": [
+        "libb2"
+    ]
+}
