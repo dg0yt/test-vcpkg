@@ -48,7 +48,7 @@ jobs:
           git init
           git remote add origin https://github.com/microsoft/vcpkg.git
           git pull origin master
-          VCPKG_TAG=`cat ${{ github.workspace }}/mm/VCPKG_BASELINE`
+          VCPKG_TAG=`cat ${{ github.workspace }}/VCPKG_BASELINE`
           git checkout ${VCPKG_TAG}
           cd "${{ env.VCPKG_ROOT }}"
           chmod +x ./bootstrap-vcpkg.sh
