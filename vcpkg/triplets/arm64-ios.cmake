@@ -13,3 +13,7 @@ endif()
 set(VCPKG_BUILD_TYPE release)
 set(VCPKG_CXX_FLAGS "-fvisibility=hidden")
 set(VCPKG_C_FLAGS "-fvisibility=hidden")
+
+# libb2 build,  see 
+# https://github.com/microsoft/vcpkg/issues/43326#issuecomment-2827154631
+set(VCPKG_MAKE_BUILD_TRIPLET "--host=arm64-apple-darwin")
