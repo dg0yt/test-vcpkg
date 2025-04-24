@@ -16,4 +16,4 @@ set(VCPKG_C_FLAGS "-fvisibility=hidden")
 
 # libb2 build,  see 
 # https://github.com/microsoft/vcpkg/issues/43326#issuecomment-2827154631
-set(VCPKG_MAKE_BUILD_TRIPLET "--host=arm64-apple-darwin")
+set(VCPKG_MAKE_BUILD_TRIPLET "--host=aarch64-apple-darwin")
