@@ -72,7 +72,7 @@ jobs:
             -D CMAKE_OSX_DEPLOYMENT_TARGET=${{ env.DEPLOYMENT_TARGET }} \
             -DIOS=TRUE \
             -DUSE_KEYCHAIN=No \
-            -G "Xcode" \
+            -G "Ninja" \
             -S ${{ github.workspace }} \
             -B ./
  
@@ -80,8 +80,4 @@ jobs:
         run: |
           cd build-mm
 
-          xcodebuild \
-            -project Testvcpkg.xcodeproj/ \
-            -scheme Testvcpkg \
-            -sdk iphoneos \
-            -configuration Release
+          cmake --build .
