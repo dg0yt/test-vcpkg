@@ -48,7 +48,7 @@ jobs:
           cd "${{ env.VCPKG_ROOT }}"
           git init
           git remote add origin https://github.com/dg0yt/vcpkg.git
-          git pull origin vcpkg-make
+          git pull origin a6149c39c5474bcf72820f4ac5aab615798a596b
           git checkout FETCH_HEAD
           cd "${{ env.VCPKG_ROOT }}"
           chmod +x ./bootstrap-vcpkg.sh
